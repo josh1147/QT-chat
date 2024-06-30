@@ -19,6 +19,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     choose.cpp \
     main.cpp \
+    privatechat.cpp \
     searchwidget.cpp \
     widget.cpp \
     login.cpp \
@@ -26,6 +27,7 @@ SOURCES += \
 
 HEADERS += \
     choose.h \
+    privatechat.h \
     searchwidget.h \
     widget.h \
     login.h \
@@ -34,6 +36,7 @@ HEADERS += \
 
 FORMS += \
     choose.ui \
+    privatechat.ui \
     searchwidget.ui \
     widget.ui \
     login.ui \
@@ -43,3 +46,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    res.qrc

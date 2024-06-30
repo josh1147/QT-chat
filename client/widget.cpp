@@ -6,6 +6,9 @@ Widget::Widget(const QString &name,const int &port,QWidget *parent)
     , ui(new Ui::Widget) , id(name)
 {
     ui->setupUi(this);
+
+    setWindowFlags(windowFlags()& ~Qt::WindowMaximizeButtonHint);
+    setFixedSize(this->width(), this->height());
     socket = new QTcpSocket(this);
     ui->your_id->setText(name);
     ui->room_label->setText(QString("%1号大厅").arg(port/100));
@@ -28,6 +31,10 @@ Widget::Widget(const QString &name,const int &port,QWidget *parent)
     else{
         ui->textEdit->append("The connection failed");
     }
+
+    // //美化
+    // ui->pushButton->setStyleSheet("QPushButton{color : #ffaa00; }");
+
 }
 
 Widget::~Widget()

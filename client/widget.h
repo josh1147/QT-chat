@@ -35,7 +35,7 @@ private:
     void clearChatHistory(); // 清空聊天记录
 
 private slots:
-    void on_btn_connect_clicked();
+    // void on_btn_connect_clicked();
     void ReadData();
     void on_btn_push_clicked();
 
@@ -44,5 +44,7 @@ private slots:
     // void paintEvent(QPaintEvent* event);
 
     void on_search1_clicked();//
+
+
 };
 #endif // WIDGET_H

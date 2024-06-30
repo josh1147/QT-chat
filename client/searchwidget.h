@@ -30,6 +30,7 @@ private slots:
 private:
     Ui::searchwidget *ui;
 
+
     QSqlDatabase db;//
 };
 

@@ -1,0 +1,9 @@
+<!DOCTYPE RCC>
+<RCC version="1.0"/>
+
+QPushButton{
+    color : #1D9DFF;
+    width : 50px;
+}
+
+
