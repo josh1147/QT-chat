@@ -51,7 +51,7 @@ void Widget::ReadData()
 {
     QByteArray buf = socket->readAll();
     ui->textEdit->append(buf);
-    saveChatData(QString(buf)); // 存储聊天记录到数据库
+    // saveChatData(QString(buf)); // 存储聊天记录到数据库
 }
 
 void Widget::on_btn_push_clicked()
