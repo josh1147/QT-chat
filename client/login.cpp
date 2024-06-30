@@ -30,12 +30,15 @@ void login::on_loginbtn_clicked()
         QString S = QString("SELECT * FROM user_table WHERE name='%1' AND password='%2'").arg(user).arg(pwd);
         QSqlQuery query ;
         if(query.exec(S)){
+            if(query.next()){
             QMessageBox::information(NULL, "登陆成功", "登陆成功！！！", QMessageBox::Yes);
             present_id = user ;
             accept();
+            }
+            else
+                QMessageBox::warning(this,"error","用户名或者密码错误！！");
+
         }
-        else
-            QMessageBox::warning(this,"error","用户名或者密码错误！！");
 
         ui->userline->clear();
         ui->pwdline->clear();
