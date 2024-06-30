@@ -21,7 +21,7 @@ public:
     ~Widget();
 
 private slots:
-    void on_btn_listen_clicked();
+    //void on_btn_listen_clicked();
 
     void on_btn_server_clicked();
 
