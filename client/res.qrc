@@ -8,5 +8,10 @@
         <file>pic/7.png</file>
         <file>pic/8.png</file>
         <file>style.qss</file>
+        <file>pic/q2.png</file>
+        <file>pic/q3.png</file>
+        <file>pic/q1.png</file>
+        <file>pic/9.png</file>
+        <file>pic/10.png</file>
     </qresource>
 </RCC>

@@ -6,4 +6,6 @@ QPushButton{
     width : 50px;
 }
 
-
+border-image{
+    opacity:0.1;
+}

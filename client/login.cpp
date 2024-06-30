@@ -36,7 +36,7 @@ login::login(QWidget *parent) :
                                    "border: none;border-radius:15px;}"
                                    "QPushButton:hover{background-color: rgb(22,218,208);}"//hover
                                    "QPushButton:pressed{background-color: rgb(17,171,164);}");//pressed
-    ui->label->setStyleSheet("font: 25 12pt '微软雅黑 Light';" "background-color:rgba(255,255,255,0)");
+    ui->label->setStyleSheet("font: 25 15pt '微软雅黑 Light';" "background-color:rgba(255,255,255,0)");
     ui->label_2->setStyleSheet("font: 25 12pt '微软雅黑 Light';" "background-color:rgba(255,255,255,0)");
     ui->label_3->setStyleSheet("font: 25 12pt '微软雅黑 Light';" "background-color:rgba(255,255,255,0)");
 

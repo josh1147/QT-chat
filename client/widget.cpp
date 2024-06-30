@@ -34,7 +34,9 @@ Widget::Widget(const QString &name,const int &port,QWidget *parent)
 
     // //美化
     // ui->pushButton->setStyleSheet("QPushButton{color : #ffaa00; }");
+    ui->label_3->setStyleSheet("font: 25 10pt '微软雅黑 Light';color: white;" "background-color:rgba(255,255,255,0)");
 
+    // ui->textEdit->setStyleSheet("font: '微软雅黑 Light';font-color: white;");
 }
 
 Widget::~Widget()

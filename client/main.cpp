@@ -22,8 +22,8 @@ QSqlDatabase db;
 void setupDatabase() {
     // 添加 SQLite 数据库驱动并设置数据库名
     db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("C:/Users/46016/Desktop/QT-chat-master/client/database.db");
-    //改为当前目录
+    db.setDatabaseName("C:/Users/54259/Desktop/QT-chat-master/client/database.db");
+
     // 尝试打开数据库连接
     if (!db.open()) {
         qDebug() << "Database Error: " << db.lastError().text();
